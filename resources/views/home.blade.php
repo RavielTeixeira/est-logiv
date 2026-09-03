@@ -1,20 +1,19 @@
-@dd($name, $habits)
-<h1>
-    Welcome to the Home Page
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ config('app.name') }}
+    </title>
 
-<p>
-    Olá, {{ $name }}
-</p>
+    @vite('resources/css/app.css')
+</head>
+<body>
+    
+    <h1 class="text-3x1 font-bold underline">
+        Hello world!
+    </h1>
 
-<p>
-    Suas habilidades são:
-</p>
-
-<ul>
-    @foreach ($habits as $item)
-        <li>
-            {{ $item }}
-        </li>
-    @endforeach
-</ul>
+</body>
+</html> 
