@@ -6,6 +6,15 @@
   Veja seus hábitos ganharem vida
 </h1>
 
-</main>
+@auth
+  <p>
+    Bem-vindo, {{ auth()->user()->name }}!
+  </p>
+  <form action="{{ route('logout') }}" method="POST">
+    @csrf
+    <button type="submit">Sair</button>
+  </form>
+@endauth
 
+</main>
 </x-layout>

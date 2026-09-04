@@ -1,11 +1,10 @@
-<header class="bg-white border-bottom border-2" flex items-center justfy-between p-4>
-{{--logo--}}  
-<div>
+<header class="flex items-center justify-between bg-white border-b-2 p-4">
+  <div>
     logo
   </div>
 
-  {{--GITHUB--}}
-  <div>
-    github
+  <div class="flex items-center gap-4">
+    <a href="{{ route('login') }}">Login</a>
+    <span>github</span>
   </div>
 </header>
